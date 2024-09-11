@@ -3864,8 +3864,8 @@ LineRenderer:
       m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 20
-    numCapVertices: 20
+    numCornerVertices: 5
+    numCapVertices: 5
     alignment: 0
     textureMode: 0
     textureScale: {x: 1, y: 1}
@@ -3973,7 +3973,7 @@ MonoBehaviour:
   m_EndPointHeight: -10
   m_ControlPointDistance: 10
   m_ControlPointHeight: 5
-  m_SampleFrequency: 20
+  m_SampleFrequency: 50
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
   m_RaycastMask:
@@ -3987,7 +3987,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 1
+  m_AllowAnchorControl: 0
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
@@ -5115,6 +5115,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 991186131}
+    - target: {fileID: 5889834197522515328, guid: 6fa4a9029d5461e4db0ca27deff91e24,
+        type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 2113924271}
     - target: {fileID: 6466659823622049718, guid: 6fa4a9029d5461e4db0ca27deff91e24,
         type: 3}
       propertyPath: m_RootOrder
@@ -5284,15 +5289,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5813893001915268655, guid: e9b5c531883e7ff4a9074eeb4c3025a9,
         type: 3}
-      propertyPath: m_CustomReticle
-      value: 
-      objectReference: {fileID: 8656087483511947524, guid: 50f8d835961353c4a8e0c4b77d7f8876,
-        type: 3}
-    - target: {fileID: 5813893001915268655, guid: e9b5c531883e7ff4a9074eeb4c3025a9,
-        type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 991186131}
+    - target: {fileID: 5813893001915268655, guid: e9b5c531883e7ff4a9074eeb4c3025a9,
+        type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 2113924271}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5311,6 +5315,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 991186131}
+    - target: {fileID: 7080115417700206420, guid: 3a189eed1bf59b645a429b705ca16c30,
+        type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 2113924271}
     - target: {fileID: 7622764675285926193, guid: 3a189eed1bf59b645a429b705ca16c30,
         type: 3}
       propertyPath: m_Name
