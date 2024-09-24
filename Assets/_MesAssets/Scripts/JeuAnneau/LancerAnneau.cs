@@ -1,13 +1,18 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class LancerAnneau : MonoBehaviour
 {
+    private bool _marquerPoint = false;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bouteille"))
         {
-            AnneauGameManager.Instance.AugmenterPointage();
+            _marquerPoint = true;
+            StopAllCoroutines(); 
+            StartCoroutine(Delai());
         }
     }
 
@@ -15,7 +20,16 @@ public class LancerAnneau : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bouteille"))
         {
-            // Enlever Points
+            _marquerPoint = false;
+        }
+    }
+
+    private IEnumerator Delai()
+    {
+        yield return new WaitForSeconds(2f);
+        if (_marquerPoint )
+        {
+            AnneauGameManager.Instance.AugmenterPointage();
         }
     }
 }
