@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_MesAssets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/_MesAssets/Scenes/XRI VR Cirque.unity
+    guid: e59b1839069574941aed1aa933525d99
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e5bad0d33d54cd24f88810adcc42aa83,
       type: 2}
