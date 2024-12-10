@@ -559,6 +559,7 @@ MonoBehaviour:
     m_Bits: 4
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
+  m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
@@ -589,6 +590,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
     m_PersistentCalls:
       m_Calls: []
   m_Activated:
@@ -648,6 +661,10 @@ MonoBehaviour:
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -1563,6 +1580,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 848419387784915812, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1436841095}
+    - target: {fileID: 1580134797806083680, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_UIScroll
+      value: 
+      objectReference: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     - target: {fileID: 2261200237506009957, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
         type: 3}
       propertyPath: m_RootOrder
@@ -1618,11 +1646,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6170184188047663795, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_StartingGroupMembers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6170184188047663795, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[0]
+      value: 
+      objectReference: {fileID: 587560796}
+    - target: {fileID: 6170184188047663795, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_StartingGroupMembers.Array.data[1]
+      value: 
+      objectReference: {fileID: 587560795}
     - target: {fileID: 7815953402045333741, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7978825662101416254, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+        type: 3}
+      propertyPath: m_UIScroll
+      value: 
+      objectReference: {fileID: 2464016903823916871, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1650,6 +1699,30 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 587560793}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &587560795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8842597669593673464, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+    type: 3}
+  m_PrefabInstance: {fileID: 587560793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &587560796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4381173175571190277, guid: 45f2a59523abb5c4999bc6eb4cd2fb33,
+    type: 3}
+  m_PrefabInstance: {fileID: 587560793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &592503340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2330,7 @@ MonoBehaviour:
     m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
+  m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
   m_AllowGazeSelect: 0
@@ -2287,6 +2361,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
     m_PersistentCalls:
       m_Calls: []
   m_Activated:
@@ -13836,13 +13922,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Target: {fileID: 0}
   m_TargetOffset: {x: 0, y: 0, z: 1}
+  m_FollowInLocalSpace: 0
+  m_ApplyTargetInLocalSpace: 0
   m_MovementSpeed: 7
+  m_MovementSpeedVariancePercentage: 0.25
   m_SnapOnEnable: 1
+  m_PositionFollowMode: 1
   m_MinDistanceAllowed: 0.01
   m_MaxDistanceAllowed: 0.3
+  m_TimeUntilThresholdReachesMaxDistance: 3
+  m_RotationFollowMode: 1
   m_MinAngleAllowed: 0.01
   m_MaxAngleAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
   m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!114 &9206850218197408177
 MonoBehaviour:
