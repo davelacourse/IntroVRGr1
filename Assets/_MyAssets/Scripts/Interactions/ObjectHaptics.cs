@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 /// <summary>
 /// Fait vibrer la main qui interagit avec CET objet, et seulement lui.
@@ -30,6 +31,9 @@ public class ObjectHaptics : MonoBehaviour
     [SerializeField] HapticPulse _onHover = Pulse(true, 0.1f, 0.1f);
     [SerializeField] HapticPulse _onSelect = Pulse(true, 0.5f, 0.25f);
     [SerializeField] HapticPulse _onActivate = Pulse(false, 0.7f, 0.15f);
+
+    //private bool _isHeld = false;
+    //private XRBaseInputInteractor _actualInteractor;
 
     static HapticPulse Pulse(bool enabled, float amplitude, float duration)
     {
@@ -69,6 +73,7 @@ public class ObjectHaptics : MonoBehaviour
 
     void OnSelectEntered(SelectEnterEventArgs args)
     {
+        //_actualInteractor = args.interactorObject as XRBaseInputInteractor ;
         Send(args.interactorObject.transform, _onSelect);
     }
 
